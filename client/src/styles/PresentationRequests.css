@@ -1,0 +1,108 @@
+/* Styles of Presentation Requests Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Readex+Pro:wght@200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.tests {
+  width: 90%;
+  font-size: 1.5em;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-image: linear-gradient(
+      rgba(235, 205, 215, 0.5),
+      rgba(235, 205, 215, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #fcbadd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.tests div.rows {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.tests div.rows div.one {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+  font-family: "Merriweather", sans-serif;
+  margin: 5px 0 5px 5px;
+}
+
+div.tests div.rows div.two {
+  color: #f30756;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+div.tests div.row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.tests div.row1 div.one {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.tests div.row1 div.one div {
+  width: 100%;
+  margin: 5px 0 0 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+div.tests div.row1 div.one h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+div.tests div.row1 div.one h5 span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f30756;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.tests div.row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0 0 10px;
+  justify-content: space-between;
+}
+
+div.tests div.row2 a button {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}

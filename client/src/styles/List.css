@@ -1,0 +1,62 @@
+/* Styles of List Component */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Readex+Pro:wght@200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .comps {
+  display: flex;
+  background-color: #ffffd8;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border-radius: 10px;
+  padding: 30px 0px 20px 0px;
+  width: 100%;
+  box-shadow: 1px 1px 18px 4px rgba(141, 141, 141, 0.75);
+  -webkit-box-shadow: 1px 1px 18px 4px rgba(141, 141, 141, 0.75);
+  -moz-box-shadow: 1px 1px 18px 4px rgba(141, 141, 141, 0.75);
+}
+
+.container .comps .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.container .comps .row .ll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.container .comps .row .ll ul {
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container h3{
+  font-size: 2.2em;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+}
+
+.container .comps .row .ll ul li:before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-position: center;
+  background-size: 10px;
+  background-image: url("https://www.pngkit.com/png/full/214-2140138_list-style-qiklaw-lead-academy.png");
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}

@@ -1,0 +1,125 @@
+/* Styles of Testimonial Requests Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Readex+Pro:wght@200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.test {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #e60c6e;
+  background-image: linear-gradient(
+      rgba(235, 205, 215, 0.5),
+      rgba(235, 205, 215, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1552688468-d87e6f7a58f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.test img {
+  width: 150px;
+  height: 150px;
+  border: 3 solid white;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+div.test p {
+  text-align: center;
+  margin: 10px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+div.test h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 2.2em;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+div.test h5 {
+  text-align: center;
+  margin: 10px;
+  color: #ee0a61;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "Merriweather", sans-serif;
+}
+
+div.test div.rows {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.test div.rows button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+div.test div.rows .one {
+  margin-left: 10px;
+}
+
+.filters {
+  display: flex;
+  margin: 10px 0;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.filters select {
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  width: 220px;
+  border: 0;
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 6px 15px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  margin: 0 20px;
+}
+
+.filters select:hover {
+  cursor: pointer;
+  color: rgb(243, 7, 86);
+  border: 2px solid rgb(243, 7, 86);
+}
+
+.filters select:focus {
+  cursor: pointer;
+  border: 2px solid rgb(243, 7, 86);
+}
+
+.filters select option {
+  font-family: "Montserrat", sans-serif;
+}
+
+.filters select option:focus {
+  color: black;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}

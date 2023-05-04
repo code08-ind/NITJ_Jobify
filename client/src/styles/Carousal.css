@@ -1,0 +1,182 @@
+/* Styles of Carousal Section */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600;700&family=Readex+Pro:wght@200;300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.mains1 {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+div.mains1 div.container1 {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.mains1 div.container1 div.details {
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  transition: all 0.2s ease-out;
+  transition-delay: 0s;
+  box-shadow: 0px 2px 5px 0px rgba(85, 85, 85, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(85, 85, 85, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(85, 85, 85, 0.75);
+}
+
+div.mains1 div.container1 div.details:hover{
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ee0a61;
+  box-shadow: 0px 2px 5px 3px rgba(255, 99, 138, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 3px rgba(255, 99, 138, 0.75);
+  -moz-box-shadow: 0px 2px 5px 3px rgba(255, 99, 138, 0.75);
+}
+
+div.mains1 div.container1 div.details p.descs {
+  text-transform: uppercase;
+  transition-delay: 0s;
+  transition: all 0.01s;
+  margin-top: 10px;
+}
+
+div.mains1 div.container1 div.details p.descs:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.containerss {
+  width: 100%;
+  height: 600px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  background: #d8e7f1;
+  background: -webkit-linear-gradient(to top, #eef2f3, #d8e7f1);
+  background: linear-gradient(to top, #eef2f3, #d8e7f1);
+}
+
+.containerss h1 {
+  text-align: center;
+  font-size: 7.2em;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+.containerss h1 span {
+  text-align: center;
+  color: rgb(238, 10, 97);
+}
+
+.containerss p {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  color: rgb(141, 141, 141);
+}
+
+.containerss .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.containerss .row button {
+  padding: 6px 45px;
+  margin: 15px;
+  font-size: 1em;
+  font-family: "Merriweather", serif;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  box-shadow: -2px 1px 10px 2px rgba(159, 159, 159, 0.75);
+  -webkit-box-shadow: -2px 1px 10px 2px rgba(159, 159, 159, 0.75);
+  -moz-box-shadow: -2px 1px 10px 2px rgba(159, 159, 159, 0.75);
+}
+
+.containerss .row button a {
+  text-decoration: none;
+  color: white;
+}
+
+.containerss .row button.main {
+  color: rgb(127, 127, 127);
+  background-color: white;
+}
+
+.containerss .row button.main a {
+  color: rgb(141, 141, 141);
+}
+
+.carousel-inner {
+  background-color: #fbf2e7;
+}
+
+.carousel-inner .carousel-item .container {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-inner .carousel-item .container .row {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner .carousel-item .container .row .main1,
+.carousel-inner .carousel-item .container .row .main2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner .carousel-item .container .row .main1 h1 {
+  font-size: 2em;
+  color: #f08331;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+
+.carousel-inner .carousel-item .container .row .main1 h1 span {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.carousel-inner .carousel-item .container .row .main2 img {
+  margin: 0px 10px 20px 110px;
+  width: 85%;
+  height: 75%;
+}
