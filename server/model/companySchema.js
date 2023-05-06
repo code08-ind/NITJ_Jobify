@@ -63,6 +63,10 @@ const companySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    program:{
+        type: String,
+        required: true
+    }
 });
 
 /* To change the Id to autoincrement form */

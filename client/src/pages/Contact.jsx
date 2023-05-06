@@ -16,7 +16,8 @@ const defaultValue = {
     year: '',
     phone: '',
     branch: '',
-    message: ''
+    message: '',
+    program:''
 };
 
 /* Contact Page */
@@ -72,9 +73,16 @@ const Contact = () => {
                     <form onSubmit={(e) => addMessageDetails(e)} method='post'>
                         <input autoComplete="off" type="text" name='name' onChange={(e) => onValueChange(e)} placeholder='Enter Your Name' required />
                         <input autoComplete="off" type="email" name='email' onChange={(e) => onValueChange(e)} placeholder='Enter Your Email' required />
-                        <input autoComplete="off" type="text" name='year' onChange={(e) => onValueChange(e)} placeholder='Enter Your Passout Year (Eg: 2023)' required />
+                        <input autoComplete="off" type="text" name='year' onChange={(e) => onValueChange(e)} placeholder='Enter Your Batch Passout Year (Eg: 2024)' required />
                         <input autoComplete="off" type="text" name='phone' onChange={(e) => onValueChange(e)} placeholder='Enter Your Contact Number' required />
                         <input autoComplete="off" type="text" name='branch' onChange={(e) => onValueChange(e)} placeholder='Enter Your Stream (Eg: CSE)' required />
+                        <select style={{ color: "black" }} value={userMessage.program} required name="program" onChange={(e) => onValueChange(e)}>
+                            <option value="Select Program">Select Program</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MBA">MBA</option>
+                            <option value="M.Sc">M.Sc</option>
+                        </select>
                         <textarea autoComplete="off" name='message' onChange={(e) => onValueChange(e)} id="msg" cols="40" rows={5} placeholder='Enter Your Message' required />
                         <button className='add' type="submit">{btnText}</button>
                     </form>

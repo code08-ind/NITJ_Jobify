@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-div.tests {
+div.presents {
   width: 90%;
   font-size: 1.5em;
   margin: 40px auto;
@@ -30,7 +30,7 @@ div.tests {
   justify-content: center;
 }
 
-div.tests div.rows {
+div.presents div.rows {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@ div.tests div.rows {
   justify-content: space-between;
 }
 
-div.tests div.rows div.one {
+div.presents div.rows div.one {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -48,13 +48,13 @@ div.tests div.rows div.one {
   margin: 5px 0 5px 5px;
 }
 
-div.tests div.rows div.two {
+div.presents div.rows div.two {
   color: #f30756;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
 
-div.tests div.row1 {
+div.presents div.row1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@ div.tests div.row1 {
   justify-content: center;
 }
 
-div.tests div.row1 div.one {
+div.presents div.row1 div.one {
   width: 100%;
   margin: 10px;
   display: flex;
@@ -71,7 +71,7 @@ div.tests div.row1 div.one {
   justify-content: space-between;
 }
 
-div.tests div.row1 div.one div {
+div.presents div.row1 div.one div {
   width: 100%;
   margin: 5px 0 0 10px;
   display: flex;
@@ -79,21 +79,21 @@ div.tests div.row1 div.one div {
   text-align: left;
 }
 
-div.tests div.row1 div.one h5 {
+div.presents div.row1 div.one h5 {
   font-size: 1.2rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   color: #000;
 }
 
-div.tests div.row1 div.one h5 span {
+div.presents div.row1 div.one h5 span {
   font-size: 1.2rem;
   font-weight: 600;
   color: #f30756;
   font-family: "Montserrat", sans-serif;
 }
 
-div.tests div.row2 {
+div.presents div.row2 {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -102,7 +102,21 @@ div.tests div.row2 {
   justify-content: space-between;
 }
 
-div.tests div.row2 a button {
+div.presents div.row2 h5{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+div.presents div.row2 h5 span{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f30756;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.presents div.row2 a button {
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 }

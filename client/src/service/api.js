@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 /* backend url to access the backends */
-const URL = "https://nitj-jobify-backend.onrender.com";
+// const URL = "https://nitj-jobify-backend.onrender.com";
+const URL = "http://localhost:8000";
 
 /* add company function */
 export const addCompany = async (data) => {

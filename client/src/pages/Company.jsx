@@ -23,7 +23,8 @@ const defaultValue = {
     packages: '',
     logo: '',
     desc: '',
-    imgLink: ''
+    imgLink: '',
+    program:''
 };
 
 /* Company Page */
@@ -77,6 +78,10 @@ const Company = () => {
                             <tr>
                                 <td>Eligibility</td>
                                 <td>{company.eligibility}</td>
+                            </tr>
+                            <tr>
+                                <td>Program</td>
+                                <td>{company.program}</td>
                             </tr>
                             <tr>
                                 <td>Last Apply Date</td>

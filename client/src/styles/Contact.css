@@ -43,6 +43,7 @@ body {
 }
 
 .container3 .row .container1 input,
+.container3 .row .container1 select,
 .container3 .row .container1 textarea {
   width: 80%;
   margin: 10px 0;
@@ -55,7 +56,12 @@ body {
   border: 2px solid rgb(195, 195, 195);
 }
 
+.container3 .row .container1 select option{
+  font-family: 'Raleway', sans-serif;
+}
+
 .container3 .row .container1 input:focus,
+.container3 .row .container1 select:focus,
 .container3 .row .container1 textarea:focus {
   margin: 10px 0;
   outline: none;

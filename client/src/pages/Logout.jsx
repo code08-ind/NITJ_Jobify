@@ -12,7 +12,8 @@ const Logout = () => {
     const { state, dispatch } = useContext(UserContext);
 
     /* Backend URL */
-    const URL = "https://nitj-jobify-backend.onrender.com";
+    // const URL = "https://nitj-jobify-backend.onrender.com";
+    const URL = "http://localhost:8000";
 
     /* Logout function */
     const userLogout = async () => {
@@ -35,11 +36,17 @@ const Logout = () => {
 
     return (
         <>
-            <div className="error">
+            <div className="error mt-2">
                 <img src={logout} alt="404 Error" />
                 <h1>THANKS FOR VISITING! You Will Be Logged Out Shortly</h1>
                 <p>You Are Being Redirected To Home Page!!</p>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </>
     );
 }

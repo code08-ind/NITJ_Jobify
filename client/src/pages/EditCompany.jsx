@@ -20,7 +20,8 @@ const defaultValue = {
     packages: '',
     logo: '',
     desc: '',
-    imgLink: ''
+    imgLink: '',
+    program: ''
 };
 
 /* Edit Company Page */
@@ -68,7 +69,7 @@ const EditCompany = () => {
                         <input autoComplete="off" type="text" name='email' required onChange={(e) => onValueChange(e)} placeholder='Enter Company Email' value={company.email} />
                         <input autoComplete="off" type="text" name='desc' required onChange={(e) => onValueChange(e)} placeholder='Enter Company Description' value={company.desc} />
                         <input autoComplete="off" type="text" name='contact' required onChange={(e) => onValueChange(e)} placeholder='Enter Company Contact Number' value={company.contact} />
-                        <input autoComplete="off" type="text" name='year' required onChange={(e) => onValueChange(e)} placeholder='Enter Company Year (Eg: 2023)' value={company.year} />
+                        <input autoComplete="off" type="text" name='year' required onChange={(e) => onValueChange(e)} placeholder='Enter Batch Year (Eg: 2024)' value={company.year} />
                         <input autoComplete="off" type="text" name='eligibility' required onChange={(e) => onValueChange(e)} placeholder='Enter Company Eligibility Criteria (Eg: 7+ CGPA)' value={company.eligibility} />
                     </div>
                     <div className="col-md-6 col-sm-12 main2">
@@ -80,15 +81,22 @@ const EditCompany = () => {
                         <input autoComplete="off" type="text" name='types' required onChange={(e) => onValueChange(e)} placeholder='Enter Post Name (Eg: SDE)' value={company.types} />
                     </div>
                 </div>
-                <input autoComplete="off" type="text" style={{color:"black"}} className='dateInp' required value={company.streams} name='streams' placeholder='Enter Streams (Separated By -) (Eg:IT-CSE)' onChange={(e) => onValueChange(e)} />
-                <select style={{color:"black"}} value={company.postType} required name="postType" onChange={(e) => onValueChange(e)} className='dateInp'>
+                <input autoComplete="off" type="text" style={{ color: "black" }} className='dateInp' required value={company.streams} name='streams' placeholder='Enter Streams (Separated By -) (Eg:IT-CSE)' onChange={(e) => onValueChange(e)} />
+                <select style={{ color: "black" }} value={company.postType} required name="postType" onChange={(e) => onValueChange(e)} className='dateInp'>
                     <option value="Select Post Type">Select Post Type</option>
                     <option value="Full Time">Full Time</option>
                     <option value="6 Months Intern + FTE">6 Months Intern + FTE</option>
                     <option value="6 Months Internship">6 Months Internship</option>
                     <option value="2 Months Internship">2 Months Internship</option>
                 </select>
-                <input autoComplete="off" type="text" style={{color:"black"}} className='dateInp' required value={company.date} name='date' placeholder='Enter Company Visiting Date (Eg: 12 September 2023)' onChange={(e) => onValueChange(e)} />
+                <select style={{ color: "black" }} value={company.program} required name="program" onChange={(e) => onValueChange(e)} className='dateInp'>
+                    <option value="Select Program">Select Program</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="M.Sc">M.Sc</option>
+                </select>
+                <input autoComplete="off" type="text" style={{ color: "black" }} className='dateInp' required value={company.date} name='date' placeholder='Enter Company Visiting Time & Date (Eg: 11 AM - 12 September 2023)' onChange={(e) => onValueChange(e)} />
                 <button className='add' type='submit'>{btnText}</button>
             </form>
         </div>

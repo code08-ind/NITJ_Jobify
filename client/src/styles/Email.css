@@ -8,44 +8,35 @@
   box-sizing: border-box;
 }
 
-div.containerd {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-div.containerd h1 {
+h1 {
   font-family: "Cinzel", sans-serif;
   text-align: center;
   margin-top: 40px;
 }
 
-div.containerd div.card {
+div.card {
   width: 70%;
 }
 
-div.containerd div.card h5 {
+div.card h5 {
   font-family: "Merriweather", sans-serif;
 }
 
-div.containerd div.card div.card-body {
+div.card div.card-body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-div.containerd div.card h5.card-header {
+div.card h5.card-header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-div.containerd div.card div.card-body{
+div.card div.card-body{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -53,7 +44,7 @@ div.containerd div.card div.card-body{
     justify-content: center;
 }
 
-div.containerd div.card div.card-body div.row{
+div.card div.card-body div.row{
     display: flex;
     width: 100%;
     margin-left: 10px;
@@ -61,7 +52,7 @@ div.containerd div.card div.card-body div.row{
     align-items: flex-start;
 }
 
-div.containerd div.card div.card-body button {
+div.card div.card-body button {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin-left: 5px;

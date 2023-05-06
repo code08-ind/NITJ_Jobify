@@ -31,7 +31,8 @@ const Login = () => {
     const navigate = useNavigate();
 
     /* Backend URL */
-    const URL = "https://nitj-jobify-backend.onrender.com";
+    // const URL = "https://nitj-jobify-backend.onrender.com";
+    const URL = "http://localhost:8000";
 
     /* On value change of form input data */
     const onValueChange = (e) => {

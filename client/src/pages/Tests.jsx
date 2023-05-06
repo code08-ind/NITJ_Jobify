@@ -99,6 +99,11 @@ const Tests = () => {
                                     </div>
                                 </div>
                                 <div className="row2">
+                                    <h5 style={{ marginLeft: "6px" }}>
+                                        Program: <span>{content.program}</span>
+                                    </h5>
+                                </div>
+                                <div className="row2">
                                     <a href={content.testLink} target='blank'>
                                         <Button variant="contained">
                                             &nbsp; <QuizIcon /> &nbsp; Take Test

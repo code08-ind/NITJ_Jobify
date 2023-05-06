@@ -26,6 +26,10 @@ const messageSchema = new mongoose.Schema({
     message: {
         type: String,
         required: true,
+    },
+    program:{
+        type: String,
+        required: true
     }
 });
 

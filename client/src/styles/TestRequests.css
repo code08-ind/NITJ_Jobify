@@ -99,6 +99,20 @@ div.tests1 div.row2 {
   justify-content: space-between;
 }
 
+div.tests1 div.row2 h5{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+div.tests1 div.row2 h5 span{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f30756;
+  font-family: "Montserrat", sans-serif;
+}
+
 div.tests1 div.row2 a button,
 div.tests1 div.row2 button {
   font-weight: bold;

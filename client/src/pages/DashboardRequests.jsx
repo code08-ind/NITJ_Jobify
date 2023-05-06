@@ -28,6 +28,7 @@ const DashboardRequests = () => {
     document.title = 'Edit/Delete Companies | NITJ\'s Jobify';
     const [stream, setStream] = useState("");
     const [postTypes, setPostTypes] = useState("");
+    const [programs, setPrograms] = useState("");
     const [companies, setCompanies] = useState([]);
     const [companyData, setCompanyData] = useState([]);
     const [btnText, setBtnText] = useState('Delete');
@@ -78,6 +79,23 @@ const DashboardRequests = () => {
             setPostTypes(post);
             setCompanies(companyData.filter((item) => {
                 return item.postType.indexOf(e.target.value) >= 0;
+            }));
+        }
+    }
+
+    /* Handle the programs in Filter */
+    const handleChangePrograms = (e) => {
+        let programe = e.target.value;
+        if (programe === "") {
+            setPrograms(programe);
+            setCompanies(companyData);
+        } else if (programe === "Select Program") {
+            setPrograms(programe);
+            setCompanies(companyData);
+        } else {
+            setPrograms(programe);
+            setCompanies(companyData.filter((item) => {
+                return item.program.indexOf(e.target.value) >= 0;
             }));
         }
     }
@@ -134,6 +152,13 @@ const DashboardRequests = () => {
                             <option value="6 Months Internship">6 Months Internship</option>
                             <option value="2 Months Internship">2 Months Internship</option>
                         </select>
+                        <select value={programs} onChange={handleChangePrograms}>
+                            <option value="Select Program">Select Program</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MBA">MBA</option>
+                            <option value="M.Sc">M.Sc</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -188,6 +213,13 @@ const DashboardRequests = () => {
                                                 ))}
                                             </Grid>
                                         </Grow>
+                                        <Typography variant="body1" color="text.success" className='mt-3'>
+                                            Program:
+                                            <br />
+                                            <span style={{
+                                                fontWeight: "bold", textAlign: "center"
+                                            }} className='text-center'>{content.program}</span>
+                                        </Typography>
                                     </CardContent>
                                     <CardActions>
                                         <Stack direction="row" spacing={1}>

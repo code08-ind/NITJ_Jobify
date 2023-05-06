@@ -50,7 +50,7 @@ const Presentations = () => {
                 <>
                     {presentations.length !== 0 ? presentations.map((content) => (
                         <>
-                            <div className='tests mt-2'>
+                            <div className='presents mt-2'>
                                 <div className="rows">
                                     <div className="one">
                                         <Avatar sx={{ bgcolor: 'white', width: 56, height: 56 }} style={{
@@ -97,6 +97,11 @@ const Presentations = () => {
                                             </h5>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="row2">
+                                    <h5 style={{ marginLeft: "6px" }}>
+                                        Program: <span>{content.program}</span>
+                                    </h5>
                                 </div>
                                 <div className="row2">
                                     <a href={content.pptLink} target='blank'>

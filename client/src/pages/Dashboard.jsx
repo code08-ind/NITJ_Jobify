@@ -27,6 +27,7 @@ const Dashboard = () => {
     document.title = 'Companies Dashboard | NITJ\'s Jobify';
     const [stream, setStream] = useState("");
     const [postTypes, setPostTypes] = useState("");
+    const [programs, setPrograms] = useState("");
     const [companies, setCompanies] = useState([]);
     const [companyData, setCompanyData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -69,6 +70,23 @@ const Dashboard = () => {
             setPostTypes(post);
             setCompanies(companyData.filter((item) => {
                 return item.postType.indexOf(e.target.value) >= 0;
+            }));
+        }
+    }
+
+    /* Handle the programs in Filter */
+    const handleChangePrograms = (e) => {
+        let programe = e.target.value;
+        if (programe === "") {
+            setPrograms(programe);
+            setCompanies(companyData);
+        } else if (programe === "Select Program") {
+            setPrograms(programe);
+            setCompanies(companyData);
+        } else {
+            setPrograms(programe);
+            setCompanies(companyData.filter((item) => {
+                return item.program.indexOf(e.target.value) >= 0;
             }));
         }
     }
@@ -122,6 +140,11 @@ const Dashboard = () => {
                             <option value="CHE">CHE</option>
                             <option value="TT">TT</option>
                             <option value="BT">BT</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Mathematics
+                            ">Mathematics
+                            </option>
                         </select>
                         <select value={postTypes} onChange={handleChangePostType}>
                             <option value="Select Post Type">Select Post Type</option>
@@ -129,6 +152,13 @@ const Dashboard = () => {
                             <option value="6 Months Intern + FTE">6 Months Intern + FTE</option>
                             <option value="6 Months Internship">6 Months Internship</option>
                             <option value="2 Months Internship">2 Months Internship</option>
+                        </select>
+                        <select value={programs} onChange={handleChangePrograms}>
+                            <option value="Select Program">Select Program</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MBA">MBA</option>
+                            <option value="M.Sc">M.Sc</option>
                         </select>
                     </div>
                 </div>
@@ -190,6 +220,13 @@ const Dashboard = () => {
                                             <span style={{
                                                 fontWeight: "bold", textAlign: "center"
                                             }} className='text-center'>{content.date}</span>
+                                        </Typography>
+                                        <Typography variant="body1" color="text.success" className='mt-3'>
+                                            Program:
+                                            <br />
+                                            <span style={{
+                                                fontWeight: "bold", textAlign: "center"
+                                            }} className='text-center'>{content.program}</span>
                                         </Typography>
                                     </CardContent>
                                     <CardActions>

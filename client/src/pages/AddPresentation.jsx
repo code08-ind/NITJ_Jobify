@@ -13,7 +13,8 @@ const defaultValue = {
     streams: '',
     postType: '',
     type: '',
-    pptLink: ''
+    pptLink: '',
+    program: ''
 };
 
 /* Add Presentation Page */
@@ -56,6 +57,13 @@ const AddPresentation = () => {
                         <option value="6 Months Intern + FTE">6 Months Intern + FTE</option>
                         <option value="6 Months Internship">6 Months Internship</option>
                         <option value="2 Months Internship">2 Months Internship</option>
+                    </select>
+                    <select style={{ color: "black" }} value={presentation.program} required name="program" onChange={(e) => onValueChange(e)} className='dateInp'>
+                        <option value="Select Program">Select Program</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="M.Sc">M.Sc</option>
                     </select>
                     <button className='add' type='submit'>{btnText}</button>
                 </form>

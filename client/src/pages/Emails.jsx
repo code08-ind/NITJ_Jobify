@@ -59,7 +59,7 @@ const Emails = () => {
                 </button>
             </div>
             {isLoading ? <MessageLoader /> :
-                <div className='containerd'>
+                <>
                     {emails.length !== 0 ? emails.map((email) => (
                         <>
                             <div className="card" data-aos="fade-up" key={email._id}>
@@ -85,7 +85,7 @@ const Emails = () => {
                         <img className='mt-2' src={email} height="50%" width="50%" alt="No Messages Found" />
                         <h1 className='text-center'>No Emails Found Inbox. Please Check Later!!</h1>
                     </div>}
-                </div>
+                </>
             }
         </>
     );

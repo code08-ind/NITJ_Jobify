@@ -34,6 +34,10 @@ const testLinkSchema = new mongoose.Schema({
     testLink: {
         type: String,
         required: true,
+    },
+    program:{
+        type: String,
+        required: true
     }
 });
 

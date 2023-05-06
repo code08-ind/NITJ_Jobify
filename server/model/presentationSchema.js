@@ -34,6 +34,10 @@ const presentationSchema = new mongoose.Schema({
     pptLink: {
         type: String,
         required: true,
+    },
+    program:{
+        type: String,
+        required: true
     }
 });
 

@@ -48,7 +48,7 @@ const Messages = () => {
             <motion.h1 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.2 }} className='text-center mt-4 mb-2'>Messages</motion.h1>
-                <br />
+            <br />
             {isLoading ? <MessageLoader /> :
                 <>
                     {messages.length !== 0 ? messages.map((message) => (
@@ -61,6 +61,7 @@ const Messages = () => {
                                 <div className="card-body">
                                     <h6 id='email'>{message.email}</h6>
                                     <h6>{message.phone}</h6>
+                                    <h6 style={{ fontWeight: "bold", color: "rgb(209, 22, 75)" }}>{message.program}</h6>
                                     <p className="card-text">Message Is: <span style={{ color: 'rgb(209, 22, 75)', fontWeight: "600" }}>{message.message}</span></p>
                                     <button className="btn btn-danger" onClick={() => deleteMessageDetails(message._id)}>Delete Message</button>
                                 </div>
