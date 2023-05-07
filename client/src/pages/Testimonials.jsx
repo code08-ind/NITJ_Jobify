@@ -68,7 +68,6 @@ const Testimonials = () => {
                     <div className="col col-sm-12" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                         <select value={testimonialSelect} onChange={handleChangeTestimonial}>
                             <option value="Select Company">Select Company</option>
-                            <option value="Select Company">Select Company</option>
                             <option value="Microsoft">Microsoft</option>
                             <option value="Google">Google</option>
                             <option value="Jio">Jio</option>
