@@ -53,7 +53,7 @@ const EditPresentation = () => {
         <>
             <motion.h1 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.2 }} className='head text-center mt-4'>Add Presentation Details</motion.h1>
+                transition={{ duration: 0.2 }} className='head text-center mt-4'>Edit Presentation Details</motion.h1>
             <div className='container'>
                 <form onSubmit={(e) => editPresentationDetails(e)} method="post">
                     <input autoComplete="off" value={presentation.name} type="text" style={{ color: "black" }} className='dateInp' required name='name' placeholder='Enter Company Name' onChange={(e) => onValueChange(e)} />
