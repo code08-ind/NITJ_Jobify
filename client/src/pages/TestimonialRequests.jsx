@@ -53,7 +53,7 @@ const TestimonialRequests = () => {
         if (post === "") {
             setTestimonialSelect(post);
             setTestimonials(testimonialData);
-        } else if (post === "Select Post Type") {
+        } else if (post === "Select Company") {
             setTestimonialSelect(post);
             setTestimonials(testimonialData);
         } else {
@@ -82,7 +82,6 @@ const TestimonialRequests = () => {
                 <div className="row" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                     <div className="col col-sm-12" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                         <select value={testimonialSelect} onChange={handleChangeTestimonial}>
-                        <option value="Select Company">Select Company</option>
                             <option value="Select Company">Select Company</option>
                             <option value="Microsoft">Microsoft</option>
                             <option value="Google">Google</option>

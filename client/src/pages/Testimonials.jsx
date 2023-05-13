@@ -46,7 +46,7 @@ const Testimonials = () => {
         if (post === "") {
             setTestimonialSelect(post);
             setTestimonials(testimonialData);
-        } else if (post === "Select Post Type") {
+        } else if (post === "Select Company") {
             setTestimonialSelect(post);
             setTestimonials(testimonialData);
         } else {
