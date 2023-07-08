@@ -44,7 +44,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light" style={{ borderBottom: '1px solid rgba(200, 200, 200, 0.5)' }}>
             <NavLink className="navbar-brand font-bold" to="/" style={{ fontWeight: 'bold' }}>
-                <img src="https://www.nitj.ac.in/physics/caneupa2020/images/logo_250.png" width={42} height={42} alt="NIT Jalandhar Logo" />
+                <img src="https://departments.nitj.ac.in/static/media/logo.f2c76d0937070ba81dc0.png" width={42} height={42} alt="NIT Jalandhar Logo" />
                 &nbsp;NIT Jalandhar's <span style={{ color: 'rgb(238, 10, 97)' }}>Jobify</span>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
